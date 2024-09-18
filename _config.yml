@@ -1,6 +1,9 @@
-title: "Blog Title"
+# bundle exec jekyll serve
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+
+title: "Tai Le"
 author: "Tai Le"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+description: "My github website"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -8,20 +11,23 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
+show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
-minimal: false             # use a dark header
+minimal: true             # use a dark header
+dark_mode: false           # set to true to enable dark mode
+
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "about-me.md", title: "About me"}
+  - {file: "cv.pdf", title: "CV"}
+  
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Mail, icon: envelope, url: "mailto:"}
+  - {title: Github, icon: github, url: "https://github.com/atlesg"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
