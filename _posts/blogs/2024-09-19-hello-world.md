@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 date: 2024-09-19
-categories: blogs
+categories: blog
 permalink: /:categories/:title.html
 ---
 
