@@ -1,7 +1,4 @@
 ---
-title: "Autodesk Inventor"
+title: "Circuit Design"
 layout: post
 ---
-
-asdasdasd asjdk ajlksa 
-asd asd 

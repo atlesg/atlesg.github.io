@@ -1,7 +1,4 @@
 ---
-title: "Autodesk Inventor"
+title: "Requirement Gathering"
 layout: post
 ---
-
-asdasdasd asjdk ajlksa 
-asd asd 
