@@ -2,9 +2,11 @@
 layout: page
 title: "Blog"
 ---
+{% assign blog_posts = site.posts | where_exp: "post", "post.tags contains 'blog'" %}
+
 {% if site.show_excerpts %}
-  {% include home.html %}
+  {% include home.html posts=blog_posts %}
 {% else %}
-  {% include archive.html title="Posts" %}
+  {% include archive.html title="Blog Posts" posts=blog_posts %}
 {% endif %}
 
