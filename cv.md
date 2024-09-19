@@ -2,7 +2,7 @@
 layout: page
 title: "CV"
 ---
-Le Anh Tai
+# Le Anh Tai
 
 <!-- Important: Replace all template content, especially contact details, with your own information. -->
 
