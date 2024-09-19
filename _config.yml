@@ -28,10 +28,10 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "blog.md", title: "Blog"}
   - {file: "hobbies.md", title: "Hobbies"}
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:"}
-  - {title: Github, icon: github, url: "https://github.com/atlesg"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+# external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+#   - {title: Mail, icon: envelope, url: "mailto:"}
+#   - {title: Github, icon: github, url: "https://github.com/atlesg"}
+#   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
