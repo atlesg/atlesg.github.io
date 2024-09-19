@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +7,28 @@
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% if site.show_frame %}
-<link rel="stylesheet" href="{{ " /assets/css/frame.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
 {% else %}
-<link rel="stylesheet" href="{{ " /assets/css/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 {% endif %}
-{% if site.plugins contains "jekyll-feed" %}
-<link rel="alternate" href="{{ site.feed.path | default: " /feed.xml" | relative_url }}" type="application/atom+xml"
-  title="{{ site.title }}">{% endif %}
+{% if site.plugins contains "jekyll-feed" %}<link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">{% endif %}
 {% if page.mathjax or site.mathjax %}
-<link rel="stylesheet" href="{{ " /assets/katex/katex.min.css" | relative_url }}">
-<script defer src="{{ " /assets/katex/katex.min.js" | relative_url }}"></script>
-<script defer src="{{ " /assets/katex/contrib/auto-render.min.js" | relative_url }}"
-  onload="renderMathInElement(document.body)"></script>
+<link rel="stylesheet" href="{{ "/assets/katex/katex.min.css" | relative_url }}">
+<script defer src="{{ "/assets/katex/katex.min.js" | relative_url }}"></script>
+<script defer src="{{ "/assets/katex/contrib/auto-render.min.js" | relative_url }}" onload="renderMathInElement(document.body)"></script>
 {% endif %}
-{% if site.comments.disqus_shortname and page.layout == "post" %}
-<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
-{% if site.comments.isso_domain and page.layout == "post" %}
-<script data-isso="http://{{ site.comments.isso_domain }}"
-  src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
+{% if site.comments.disqus_shortname and page.layout == "post" %}<script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>{% endif %}
+{% if site.comments.isso_domain and page.layout == "post" %}<script data-isso="http://{{ site.comments.isso_domain }}" src="//{{ site.comments.isso_domain }}/js/embed.min.js"></script>{% endif %}
 {% if site.show_sidebar or site.sidebar %}{% include sidebar.html %}{% endif %}
 
 {% if site.navigation %}
-{% assign pages = site.navigation %}
+  {% assign pages = site.navigation %}
 {% else %}
-{% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
+  {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
 <header>
-  <a href="{{ " /" | relative_url }}" class="title">{{ site.title | escape }}</a>
+  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
 </header>
 
@@ -45,10 +39,9 @@
     <header>
       <h1>LE ANH TAI</h1>
       <h3>Engineer. Maker. Business Analyst</h3>
-      <p>Passionate about leveraging technology to solve complex problems and drive business growth. Experienced in
-        engineering, product development, and data analysis.</p>
+      <p>Passionate about leveraging technology to solve complex problems and drive business growth. Experienced in engineering, product development, and data analysis.</p>
     </header>
-
+    
     <section style="padding: 1em 0;">
       <h2 style="text-align: left;">Something about me</h2>
       <p>I like tinker with things</p>
@@ -56,13 +49,10 @@
 
         <div style="width: 60%; margin-right: 20px;">
           <details style="margin-bottom: 1em; border: 1px solid #383838; border-radius: 5px; overflow: hidden;">
-            <summary
-              style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">
-              Education</summary>
-
+            <summary style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">Education</summary>
+            
             <div style="padding: 1em; text-align: left;">
-              <h4 style="margin-bottom: 0.5em;">Bachelor Degree in Electrical Engineering and Information Technology
-              </h4>
+              <h4 style="margin-bottom: 0.5em;">Bachelor Degree in Electrical Engineering and Information Technology</h4>
               <p style="margin: 0;">Vietnames-German University (VGU)</p>
               <p style="margin: 0; font-style: italic;">2013 - 2018</p>
               <ul style="margin-top: 0.5em; padding-left: 1.5em;">
@@ -82,37 +72,34 @@
                 <li>Thesis: Spray Painting Robot</li>
               </ul>
             </div>
-
+            
           </details>
 
           <details style="margin-bottom: 1em; border: 1px solid #383838; border-radius: 5px; overflow: hidden;">
-            <summary
-              style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">
-              Courses</summary>
-
+            <summary style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">Education</summary>
+            
             <div style="padding: 1em; text-align: left;">
               <h4 style="margin-bottom: 0.5em;">IT BA Mentorship Program</h4>
               <p style="margin: 0;">SwiftTech Education</p>
               <p style="margin: 0; font-style: italic;">2013 - 2018</p>
               <ul style="margin-top: 0.5em; padding-left: 1.5em;">
-                <li><a href="/attachments/Yostructor BA Project - Le Anh Tai.pdf">Relevant coursework: Yostructor Mock
-                    Project</a></li>
+                <li><a href="attachments/Yostructor BA Project - Le Anh Tai.pdf">Relevant coursework: Yostructor Mock Project</a></li>
 
               </ul>
             </div>
 
-          </details>
 
+            
+          </details>
+          
           <details style="margin-bottom: 1em; border: 1px solid #383838; border-radius: 5px; overflow: hidden;">
-            <summary
-              style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">
-              Work Experience</summary>
+            <summary style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">Work Experience</summary>
 
             <div style="padding: 1em; text-align: left;">
               <h4 style="margin-bottom: 0.5em;">Robotic Engineer</h4>
               <p style="margin: 0;">AKB Machinery Ltd.,</p>
               <p style="margin: 0; font-style: italic;">2018 - Jan 2024</p>
-              <p>
+              <p>                
                 AKB Machinery one of the first Vietnamese companies to successfully design and manufacture
                 industrial and educational robotic arms. In addition, AKB Machinery specializes in manufacturing
                 and producing various types of mechatronic equipment based on numerical control system (NC)
@@ -125,62 +112,46 @@
                 on new products, implementing and writing instructional documents for the team.
                 - Managing the installation of on-site industrial machines and training for client's technicians.
               </p>
-            </div>
+            </div> 
           </details>
-
+          
           <details style="margin-bottom: 1em; border: 1px solid #383838; border-radius: 5px; overflow: hidden;">
-            <summary
-              style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">
-              Present</summary>
+            <summary style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">Present</summary>
             <p style="padding: 1em; text-align: center;">Insert your detailed "Education" content here.</p>
           </details>
-
+          
           <details style="margin-bottom: 1em; border: 1px solid #383838; border-radius: 5px; overflow: hidden;">
-            <summary
-              style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">
-              Future</summary>
+            <summary style="padding: 0.5em; background-color: #ffffff; cursor: pointer; text-align: center; list-style: none;">Future</summary>
             <p style="padding: 1em; text-align: center;">Insert your detailed "Skills" content here.</p>
           </details>
         </div>
-
+        
         <div style="width: 40%; display: flex; justify-content: center; align-items: flex-start;">
-          <img src="images\avatar-line-art.JPG" alt="Tai Le's Avatar"
-            style="max-width: 100%; height: auto; margin-top: -0.1em;">
+          <img src="images\avatar-line-art.JPG" alt="Tai Le's Avatar" style="max-width: 100%; height: auto; margin-top: -0.1em;">
         </div>
 
-      </div>
-
+      </div>      
+     
     </section>
 
     <section style="padding: 1em 0;">
       <h2>Professional Skills & Tools</h2>
-      <p>As a (self-claimed) generalist, I learnt many stuffs in the past, from engineering to art, up to an acceptable
-        level where I am able to solve my problems. Only one thing I am confident to say is that I am a quick tools
-        learner, and I am always curious about new stuffs.</p>
+      <p>As a (self-claimed) generalist, I learnt many stuffs in the past, from engineering to art, up to an acceptable level where I am able to solve my problems. Only one thing I am confident to say is that I am a quick tools learner, and I am always curious about new stuffs.</p>
       <h3>Mechanical Engineering</h3>
       <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-inventor %}">Inventor</a></li>
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-fusion360 %}">Fusion 360</a></li>
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-autocad %}">AutoCAD</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-inventor %}">Inventor</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-fusion360 %}">Fusion 360</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-autocad %}">AutoCAD</a></li>
       </ul>
 
       <h3>Software & Embedded System</h3>
       <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-c %}">C/C++</a></li>
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-csharp %}">C#</a></li>
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-python %}">Python</a></li>
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-java %}">Java (Android)</a></li>
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-matlab %}">Matlab</a></li>
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a
-            href="{% post_url 2024-09-17-circuitdesign %}">Circuit Design</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-c %}">C/C++</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-csharp %}">C#</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-python %}">Python</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-java %}">Java (Android)</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-matlab %}">Matlab</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;"><a href="{% post_url 2024-09-17-circuitdesign %}">Circuit Design</a></li>
       </ul>
 
 
@@ -188,14 +159,13 @@
       <h3>Business Analysis</h3>
 
       <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
-        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Requirement Gathering &
-          Analysis</a></li>
+        <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Requirement Gathering & Analysis</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">UML & BPMN</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Jira</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Confluence</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Balsamiq</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Figma</a></li>
-
+        
       </ul>
 
       <h3>Personal Tools</h3>
@@ -206,16 +176,16 @@
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Obsidian</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Adobe</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Blender</a></li>
-
+        
       </ul>
 
       <h3>Languages</h3>
       <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">English - IELTS 7.0</a></li>
         <li style="background-color: #f0f0f0; padding: 5px 10px; border-radius: 5px;">Vietnamese</a></li>
-
+        
       </ul>
-
+    
     </section>
 
 
