@@ -1,6 +1,8 @@
 ---
 title: "Requirement Gathering"
 layout: post
+categories: skills
+permalink: /:categories/:title.html
 ---
 
 Requirement gathering is one of the fundamental skills I acquired during my IT Business Analysis Mentorship program. This crucial process involves collecting, documenting, and managing the needs and expectations of stakeholders for a project or system. Here are some key aspects of requirement gathering that I learned:

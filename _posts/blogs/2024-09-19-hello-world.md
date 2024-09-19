@@ -2,7 +2,8 @@
 layout: post
 title: "Hello World"
 date: 2024-09-19
-tags: [blog]
+categories: blogs
+permalink: /:categories/:title.html
 ---
 
 Hello to everyone reading this blog!
