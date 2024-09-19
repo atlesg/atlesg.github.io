@@ -2,18 +2,7 @@
 layout: page
 title: "CV"
 ---
-
-
----
-name: Tai Le
-header:
-  - text: |
-      <span style="font-size: 1.2em; font-weight: bold;">Applying for: Technical Project Manager</span>
-  - text: <span class="iconify" data-icon="tabler:phone"></span> (+84) 902-436-309
-    newLine: true
-  - text: <span class="iconify" data-icon="tabler:mail"></span> anhtaile0911@gmail.com
-    link: mailto:anhtaile0911@gmail.com
----
+Le Anh Tai
 
 <!-- Important: Replace all template content, especially contact details, with your own information. -->
 
