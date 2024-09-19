@@ -9,4 +9,3 @@ title: "Blog"
 {% else %}
   {% include archive.html title="Blog Posts" posts=blog_posts %}
 {% endif %}
-
