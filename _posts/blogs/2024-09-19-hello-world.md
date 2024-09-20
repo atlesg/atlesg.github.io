@@ -1,24 +1,12 @@
 ---
 layout: post
 title: "Hello World"
-date: 2024-09-19
 categories: blog
 permalink: /:categories/:title.html
 ---
 
 Hello to everyone reading this blog!
 
-I'm excited to share that this blog post was created using Cursor and Jekyll. Through this process, I've had the opportunity to learn something new, which has been a great experience.
+I'm excited to share that this blog post was created using Jekyll with the help of Cursor. It took me one night to learn the basics of Jekyll. Most of the time was spent coding the home page layout. Thanks to Cursor, everything was straightforward even though I never used Jekyll before and my HTML / CSS skills are limited.
 
-Jekyll is a static site generator that makes it easy to create simple, blog-aware websites. It takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site's look and feel, URLs, the data displayed on the page, and more.
-
-Cursor, on the other hand, is an AI-powered code editor that helps developers write, edit, and understand code more efficiently. It's been an interesting tool to use in conjunction with Jekyll for creating this blog.
-
-Some key things I've learned in this process:
-
-1. How to set up a Jekyll site
-2. Writing content in Markdown
-3. Using YAML front matter to set page variables
-4. The basics of how Jekyll processes and generates static pages
-
-I'm looking forward to exploring more features and sharing my journey as I continue to learn and grow with these tools. Stay tuned for more posts!
+to be continued...
