@@ -15,7 +15,7 @@ permalink: /projects/
 
 </div>
 
-# Business Analysist Path
-Mock Project: Yostructor
+<!-- # Business Analysist Path
+Mock Project: Yostructor -->
 
 
